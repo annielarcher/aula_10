@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Aula 10</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <h1>Aula 10 - Javascript</h1>
+    <ul>
+      <li>if, else if, else</li>
+      <li>Switch case</li>
+      <li>Loop</li>
+      <li>loop com while</li>
+      <li>Do...while</li>
+    </ul>
     <script>
       let temperatura = 30;
       if (temperatura <= 10) {
@@ -55,6 +64,20 @@
         console.log(`Número: ${i}`);
         i++;
       }
+
+      let y = 10;
+      while (y > 0) {
+        console.log(`Número: ${y}`);
+        y--;
+      }
+
+      let senha = "1234";
+      let tentativa = "";
+
+      while (tentativa !== senha) {
+        tentativa = prompt("Digite a senha:");
+      }
+      console.log("Acesso Liberado!");
     </script>
   </body>
 </html>
